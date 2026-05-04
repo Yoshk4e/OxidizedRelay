@@ -1,0 +1,22 @@
+[package]
+name = "OxidizedRelay"
+version = "0.1.0"
+edition = "2024"
+description = "A tool to parse an anime game about factories ChaCha20-encrypted protobuf PCAPs"
+
+[[bin]]
+name = "OxidizedRelay"
+path = "src/main.rs"
+
+[dependencies]
+anyhow     = "1"
+chacha20   = "0.9"
+clap       = { version = "4", features = ["derive"] }
+colored    = "2"
+crc32fast  = "1"
+dialoguer  = "0.11"
+etherparse = "0.20"
+hex        = "0.4"
+pcap-file  = "2"
+prost-types = "0.12"
+protox     = "0.6"
